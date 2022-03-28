@@ -397,7 +397,7 @@ async function getMarketData(
   marketConfig: MarketConfig
 ): Promise<Partial<MarketDto>> {
   const marketDataResponse = await axios.get(
-    `https://event-history-api-candles.herokuapp.com/markets/` +
+    `https://mango-all-markets-api.herokuapp.com/markets/` +
       `${patchInternalMarketName(marketConfig.name)}`
   );
   return marketDataResponse.data;
